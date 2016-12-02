@@ -3,7 +3,11 @@ begin:
 --/f
 {"depth":0,"type":"dir"}
 --/f
-regexp: {"depth":1,"filename":"bar","group":"vagrant","mtime":"\S+","perms":"0755","type":"dir","user":"vagrant"}
+generator: <<CC 
+!bash
+echo  'regexp: {"depth":1,"filename":"bar","group":"vagrant","mtime":"\S+","perms":"0755","type":"dir","user":"'$USER'"}'
+CC
+
 --/f
 {"depth":1,"type":"updir"}
 --/f
