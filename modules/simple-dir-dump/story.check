@@ -5,7 +5,7 @@ begin:
 --/f
 generator: <<CC 
 !bash
-echo  'regexp: {"depth":1,"filename":"bar","group":"vagrant","mtime":"\S+","perms":"0755","type":"dir","user":"'$USER'"}'
+echo  'regexp: {"depth":1,"filename":"bar","group":"'$USER'","mtime":"\S+","perms":"0755","type":"dir","user":"'$USER'"}'
 CC
 
 --/f
