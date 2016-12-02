@@ -1,0 +1,15 @@
+begin:
+{"dir_to_dump":"/tmp/foo/","stream_type":"Directory Dump","type":"header"}
+--/f
+{"depth":0,"type":"dir"}
+--/f
+regexp: {"depth":1,"filename":"bar","group":"vagrant","mtime":"\S+","perms":"0755","type":"dir","user":"vagrant"}
+--/f
+{"depth":1,"type":"updir"}
+--/f
+{"depth":0,"type":"updir"}
+--/f
+"type":"footer"
+--/f
+end:
+
